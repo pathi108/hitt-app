@@ -15,44 +15,45 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
+            color: #e0e0e0;
+            background-color: #000000;
             padding: 20px;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: #000000;
+            padding: 30px;
         }
 
         h1 {
-            color: #000;
+            color: #00ff00;
             font-size: 2.5em;
             margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
         }
 
         h2 {
-            color: #000;
+            color: #00ff00;
             font-size: 1.8em;
-            margin-top: 40px;
+            margin-top: 35px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #000;
-            padding-bottom: 10px;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 8px;
         }
 
         h3 {
-            color: #333;
+            color: #00ff00;
             font-size: 1.3em;
             margin-top: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         p {
             margin-bottom: 15px;
+            color: #e0e0e0;
         }
 
         ul, ol {
@@ -62,34 +63,56 @@
 
         li {
             margin-bottom: 8px;
+            color: #e0e0e0;
         }
 
         strong {
-            color: #000;
+            color: #00ff00;
+            font-weight: 600;
         }
 
         .meta {
-            color: #666;
+            color: #b0b0b0;
             font-size: 0.95em;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #333;
+            text-align: center;
         }
 
         .highlight {
-            background: #f0f0f0;
-            padding: 20px;
-            border-left: 4px solid #000;
+            background-color: #0a2a0a;
+            padding: 15px;
+            border-left: 4px solid #00ff00;
             margin: 20px 0;
             border-radius: 4px;
         }
 
+        .warning-box {
+            background-color: #1a0000;
+            border: 3px solid #ff0000;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        .warning-box h2 {
+            color: #ff0000;
+            border-bottom-color: #ff0000;
+            margin-top: 0;
+        }
+
+        .warning-box strong {
+            color: #ff0000;
+        }
+
         .no-collect {
-            color: #d32f2f;
+            color: #ff4444;
         }
 
         .yes-check {
-            color: #2e7d32;
+            color: #00ff00;
         }
 
         table {
@@ -99,7 +122,7 @@
         }
 
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #333;
         }
 
         th, td {
@@ -108,36 +131,50 @@
         }
 
         th {
-            background: #000;
-            color: white;
+            background: #00ff00;
+            color: #000000;
             font-weight: 600;
         }
 
         tr:nth-child(even) {
-            background: #f9f9f9;
+            background: #0a0a0a;
         }
 
         .footer {
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 2px solid #ddd;
+            border-top: 1px solid #333;
             text-align: center;
-            color: #666;
+            color: #888;
             font-size: 0.9em;
         }
 
         a {
-            color: #1976d2;
+            color: #00ff00;
             text-decoration: none;
+            transition: opacity 0.2s;
         }
 
         a:hover {
+            opacity: 0.7;
             text-decoration: underline;
         }
 
+        code {
+            background: #1a1a1a;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+        }
+
         @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
             .container {
-                padding: 20px;
+                padding: 20px 15px;
             }
 
             h1 {
@@ -147,6 +184,10 @@
             h2 {
                 font-size: 1.5em;
             }
+
+            h3 {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
@@ -155,8 +196,8 @@
         <h1>Privacy Policy for HIIT Life</h1>
 
         <div class="meta">
-            <strong>Effective Date:</strong> March 28, 2026<br>
-            <strong>Last Updated:</strong> March 28, 2026
+            <strong>Effective Date:</strong> May 7, 2026<br>
+            <strong>Last Updated:</strong> May 7, 2026
         </div>
 
         <h2>Introduction</h2>
@@ -165,6 +206,14 @@
 
         <div class="highlight">
             <strong>The short version:</strong> HIIT Life is a 100% offline fitness app. We do not collect, store, transmit, or share any personal information with our servers or third parties. All your data stays on your device.
+        </div>
+
+        <h2>Age Restriction</h2>
+
+        <div class="warning-box">
+            <p><strong>This app is intended for users aged 16 and above.</strong> We do not knowingly collect or store data from anyone under the age of 16. If you are under 16, please do not use this app.</p>
+            <p>While the app does not collect data from anyone, high-intensity interval training (HIIT) is a physically demanding activity that may not be appropriate for younger users. Parents and guardians should supervise minors and consult with a healthcare professional before allowing anyone under 18 to engage in high-intensity exercise.</p>
+            <p>Please review our <a href="terms-of-service.html">Terms of Service</a> for important medical disclaimers regarding high-intensity exercise.</p>
         </div>
 
         <h2>Information We Do NOT Collect</h2>
@@ -185,7 +234,9 @@
 
         <h2>Information Stored Locally on Your Device</h2>
 
-        <p>HIIT Life stores the following data <strong>locally on your device only</strong> to provide app functionality:</p>
+        <p>HIIT Life stores <strong>ALL data locally on your device ONLY</strong>. No data is collected, transmitted, or stored on any external server. The developer has no access to any user data whatsoever.</p>
+
+        <p>The following types of data are stored <strong>exclusively on your device</strong> to provide app functionality:</p>
 
         <h3>1. Workout Data</h3>
         <ul>
@@ -218,7 +269,21 @@
         </ul>
 
         <div class="highlight">
-            <strong>Important:</strong> All this data is stored exclusively on your device using Android's secure local storage (AsyncStorage and SecureStore). This data never leaves your device unless you manually share it (e.g., screenshots, backups).
+            <strong>Important:</strong> All this data is stored exclusively on your device using Android's secure local storage (AsyncStorage and SecureStore). This data never leaves your device unless you manually share it (e.g., screenshots, backups). The developer has no access to any of your workout data, supplement tracking, or user preferences.
+        </div>
+
+        <h3>Data Loss Warning</h3>
+        <div class="warning-box">
+            <p><strong>Because ALL data is stored locally on your device, the developer CANNOT recover lost data under any circumstances.</strong></p>
+            <p>You may permanently lose your data if:</p>
+            <ul>
+                <li>You uninstall the app from your device</li>
+                <li>Your device storage is cleared or the app's cache/data is deleted</li>
+                <li>Your device is damaged, lost, stolen, or factory reset</li>
+                <li>Your device's operating system is reinstalled or updated in a way that clears app data</li>
+                <li>You switch to a new device without manually transferring data</li>
+            </ul>
+            <p><strong>You are solely responsible for backing up your data</strong> if you wish to preserve it. The developer recommends periodically recording important workout configurations and supplement schedules if you want to retain them long-term.</p>
         </div>
 
         <h2>How Your Data is Used</h2>
@@ -234,7 +299,7 @@
 
         <p>Since all data is local, <strong>we never see, access, or process your information</strong>.</p>
 
-        <h2>Internet Usage</h2>
+        <h2>Internet Usage & Third-Party Content</h2>
 
         <p>HIIT Life requests internet permission for one optional feature only:</p>
 
@@ -254,6 +319,23 @@
         </ul>
 
         <p><strong>All other app features work completely offline.</strong></p>
+
+        <h3>Third-Party Content & Services</h3>
+        <p>The app may allow users to access third-party content such as YouTube videos for workout demonstrations or guidance. When you access such content:</p>
+        <ul>
+            <li><strong>You are subject to the privacy policies of those third-party services</strong></li>
+            <li>These third-party services have their own data collection and privacy practices</li>
+            <li>The developer is NOT responsible for the data practices, privacy policies, or content of third-party services</li>
+            <li>We recommend reviewing the privacy policies of any third-party services you access</li>
+        </ul>
+
+        <p><strong>Relevant third-party privacy policies:</strong></p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            <li><a href="https://www.youtube.com/howyoutubeworks/our-commitments/protecting-user-data/" target="_blank">YouTube Privacy Information</a></li>
+        </ul>
+
+        <p>The developer does not control, endorse, or take responsibility for third-party content or services accessed through the app.</p>
 
         <h2>Permissions Explained</h2>
 
@@ -292,6 +374,26 @@
         </table>
 
         <p>You can deny notification permissions if you don't want supplement reminders. The app will still function for timer and workout features.</p>
+
+        <h2>No Analytics, Tracking, or Data Collection</h2>
+
+        <div class="highlight">
+            <p><strong>HIIT Life does NOT use any analytics tools, tracking technologies, or data collection mechanisms.</strong></p>
+        </div>
+
+        <p>Specifically, the app does NOT:</p>
+        <ul>
+            <li class="no-collect">❌ Use analytics services (Google Analytics, Firebase Analytics, Mixpanel, etc.)</li>
+            <li class="no-collect">❌ Include tracking pixels or beacons</li>
+            <li class="no-collect">❌ Use cookies or similar tracking technologies</li>
+            <li class="no-collect">❌ Include advertising SDKs or ad networks</li>
+            <li class="no-collect">❌ Collect usage statistics or telemetry data</li>
+            <li class="no-collect">❌ Monitor your workout sessions, frequency, or patterns</li>
+            <li class="no-collect">❌ Track your location, device information, or behavior</li>
+            <li class="no-collect">❌ Send crash reports or diagnostic data to external servers</li>
+        </ul>
+
+        <p><strong>No usage data is collected whatsoever.</strong> We don't know who uses the app, how often it's used, which features are popular, or any other metrics. Your privacy is absolute.</p>
 
         <h2>Data Security</h2>
 
@@ -338,7 +440,17 @@
 
         <h2>Children's Privacy</h2>
 
-        <p>HIIT Life does not knowingly collect personal information from anyone, including children under 13. Since we don't collect any data at all, the app is safe for all ages. However, the app is designed for fitness enthusiasts and may not be appropriate for young children without parental guidance on proper exercise techniques.</p>
+        <p><strong>This app is intended for users aged 16 and above.</strong> HIIT Life does not knowingly collect personal information from anyone, including children under 16. Since we don't collect any data at all, there is no risk of unauthorized data collection from minors.</p>
+
+        <p>However, <strong>high-intensity interval training may not be appropriate or safe for children and young teenagers.</strong> The app is designed for physically mature individuals who can safely perform demanding exercise routines.</p>
+
+        <p>Parents and guardians should:</p>
+        <ul>
+            <li>Review our <a href="terms-of-service.html">Terms of Service</a> for important medical disclaimers and parental guidance</li>
+            <li>Consult with a pediatrician or healthcare provider before allowing minors to use the app</li>
+            <li>Supervise minors during high-intensity exercise</li>
+            <li>Ensure proper exercise form, technique, and safety measures are followed</li>
+        </ul>
 
         <h2>International Users</h2>
 
@@ -361,6 +473,19 @@
         </ul>
 
         <p>We encourage you to review this Privacy Policy periodically.</p>
+
+        <h3>Commitment to Future Transparency</h3>
+        <div class="warning-box">
+            <p><strong>Important Notice About Future Features:</strong></p>
+            <p>If the app ever introduces features that collect, transmit, or store data externally (such as cloud sync, user accounts, analytics, or any form of data collection), this Privacy Policy will be updated <strong>BEFORE</strong> those features go live.</p>
+            <p>Users will be notified of such changes through:</p>
+            <ul>
+                <li>An in-app notification before the update</li>
+                <li>Clear disclosure in the app store update notes</li>
+                <li>An updated Privacy Policy with a new effective date</li>
+            </ul>
+            <p><strong>Any data collection features will be opt-in</strong> and clearly explained before implementation. We will never start collecting data without explicit user notification and consent.</p>
+        </div>
 
         <h2>California Privacy Rights (CCPA)</h2>
 
@@ -432,7 +557,7 @@
         <p>If you have questions about this Privacy Policy or how HIIT Life handles data, please contact us:</p>
 
         <p>
-            <strong>Email:</strong>hiitlifeapp@gmail.com<br>
+            <strong>Email:</strong> dpathirana@example.com<br>
             <strong>GitHub:</strong> <a href="https://github.com/dpathirana" target="_blank">github.com/dpathirana</a>
         </p>
 
@@ -471,6 +596,12 @@
 
             Use HIIT Life with confidence knowing your workouts, timers, and supplement tracking stay completely private.
         </div>
+
+        <h2>Related Documents</h2>
+        <p>For important information about using the app, please also review:</p>
+        <ul>
+            <li><a href="terms-of-service.html"><strong>Terms of Service</strong></a> - Important medical disclaimers, user responsibilities, and legal terms</li>
+        </ul>
 
         <div class="footer">
             <p><strong>Thank you for trusting HIIT Life with your fitness journey.</strong></p>
